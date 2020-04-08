@@ -1,0 +1,114 @@
+/// makes alec navbar
+/// @param {color} $background-color [#333] - background color of navbar
+/// @param {length} $height [55px] - height of navbar
+/// @param {number} $z-index [100] - z-index of navbar
+/// @param {string} $expand [md] - expand on (a, sm, md, lg, xl) and up
+/// @param {length} $child_x-padding [15px] - horizontal padding of child elements of navbar
+/// @param {color} $child_fg-color [15px] - child foreground color of navbar
+/// @param {length} $brand_font-size [22px] - brand font size
+/// @param {length} $menu-height-on-mobile [220px] - menu height on mobile
+@mixin alec-navbar(
+  $background-color: #333,
+  $height: 55px,
+  $z-index: 100,
+  $expand: md,
+  $child_x-padding: 15px,
+  $child_fg-color: #fff,
+  $brand_font-size: 22px,
+  $menu-height-on-mobile: 220px) {
+
+  /* navbar mixin
+  ------------------------------------------------------------------------ */
+
+  .navbar {
+    background-color: $background-color;
+    line-height: $height;
+
+    > .container, > .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    &.fixed-top {
+      width: 100%;
+      position: fixed;
+      z-index: $z-index;
+    }
+  }
+
+
+
+  // horizontal padding
+  %child-x-padding { padding: 0 $child_x-padding; }
+  // color
+  %child-fg-color {
+    color: $child_fg-color;
+    height: $height;
+    line-height: $height;
+  }
+
+
+  .navbar-brand {
+    font-size: $brand_font-size;
+    display: block;
+    @extend %child-x-padding;
+    @extend %child-fg-color;
+  }
+  
+  
+  .navbar-button {
+    @extend %child-x-padding;
+    cursor: pointer;
+    height: $height;
+    background-color: transparent;
+    border-width: 0;
+  
+    &:focus {
+      outline: 0;
+    }
+  
+    span {
+      display: block;
+      height: 2px;
+      width: 23px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      background: $child_fg-color;
+    }
+  }
+
+
+
+  // .nav = ul
+  .navbar .nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+    flex: 0 0 100%;
+
+    &.open { height: $menu-height-on-mobile; overflow: auto; }
+
+    > li {
+      flex: 0 0 100%;
+    }
+
+    > li > a {
+      @extend %child-x-padding;
+      @extend %child-fg-color;
+    }
+  }
+
+
+
+  // navbar expand
+  @include media($expand) {
+    .navbar .nav { height: auto; width: auto; flex: 0 0 auto; }
+    .navbar .nav > li { flex: 0 0 0; }
+    .navbar-button { display: none; }
+  }
+  // /navbar expand
+
+}

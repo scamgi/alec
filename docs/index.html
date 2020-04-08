@@ -1,0 +1,952 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Alec - v0.1.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Alec - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>A responsive little CSS Framework!</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/jackprawns/alec#readme">Alec - v0.1.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="globals"><a href="#globals">globals</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="globals-variable"><a href="#globals-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="globals" data-name="breakpoints" data-type="variable"><a href="#globals-variable-breakpoints">breakpoints</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="globals-function"><a href="#globals-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="globals" data-name="any" data-type="function"><a href="#globals-function-any">any</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="globals-mixin"><a href="#globals-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="globals" data-name="media" data-type="mixin"><a href="#globals-mixin-media">media</a></li><li class="sidebar__item sassdoc__item" data-group="globals" data-name="box-sizing" data-type="mixin"><a href="#globals-mixin-box-sizing">box-sizing</a></li><li class="sidebar__item sassdoc__item" data-group="globals" data-name="clearfix" data-type="mixin"><a href="#globals-mixin-clearfix">clearfix</a></li><li class="sidebar__item sassdoc__item" data-group="globals" data-name="animate" data-type="mixin"><a href="#globals-mixin-animate">animate</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="globals-placeholder"><a href="#globals-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="globals" data-name="clearfix" data-type="placeholder"><a href="#globals-placeholder-clearfix">clearfix</a></li><li class="sidebar__item sassdoc__item" data-group="globals" data-name="animate" data-type="placeholder"><a href="#globals-placeholder-animate">animate</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-base" data-type="mixin"><a href="#undefined-mixin-alec-base">alec-base</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-button" data-type="mixin"><a href="#undefined-mixin-alec-button">alec-button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-card" data-type="mixin"><a href="#undefined-mixin-alec-card">alec-card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-container" data-type="mixin"><a href="#undefined-mixin-alec-container">alec-container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-form" data-type="mixin"><a href="#undefined-mixin-alec-form">alec-form</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-grid" data-type="mixin"><a href="#undefined-mixin-alec-grid">alec-grid</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-list" data-type="mixin"><a href="#undefined-mixin-alec-list">alec-list</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-navbar" data-type="mixin"><a href="#undefined-mixin-alec-navbar">alec-navbar</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="normalize" data-type="mixin"><a href="#undefined-mixin-normalize">normalize</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-spacing" data-type="mixin"><a href="#undefined-mixin-alec-spacing">alec-spacing</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-table" data-type="mixin"><a href="#undefined-mixin-alec-table">alec-table</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="alec-utilities" data-type="mixin"><a href="#undefined-mixin-alec-utilities">alec-utilities</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="globals"><div class="container">globals</div></h1><section class="main__sub-section" id="globals-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="globals-variable-breakpoints"><h3 class="item__heading"><a class="item__name" href="#variable-breakpoints">breakpoints</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoints: (
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>breakpoints</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li></ul></section></section><section class="main__sub-section" id="globals-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="globals-function-any"><h3 class="item__heading"><a class="item__name" href="#function-any">any</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function any($list, $item) { 
+  @return index($list, $item) != null;
+ }" data-collapsed="@function any($list, $item) { ... }"><code>@function any($list, $item) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>returns true if it finds $item in $list, otherwise false</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc"><p>list</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$item</code></th><td data-label="desc"><p>item</p></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Bool</code> &mdash;<p>returns true if it finds $item in $list, otherwise false</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-grid"><code>alec-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-grid"><code>alec-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-grid"><code>alec-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li></ul></section></section><section class="main__sub-section" id="globals-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="globals-mixin-media"><h3 class="item__heading"><a class="item__name" href="#mixin-media">media</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin media($b, $type: min) { 
+  @if map-has-key($breakpoints, $b) {
+    $px: map-get($breakpoints, $b);
+
+    @if $type == max {
+      $px: $px - 1px;
+    }
+    @media (#{$type}-width: $px) {
+      @content;
+    }
+  }
+  @else {
+    @error &quot;Error: #{$w} not found in $widths.&quot;;
+  }
+ }" data-collapsed="@mixin media($b, $type: min) { ... }"><code>@mixin media($b, $type: min) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>media queries mixin</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$b</code></th><td data-label="desc"><p>breakpoint (&#39;a&#39;, &#39;sm&#39;, &#39;md&#39;, &#39;lg&#39;, &#39;xl&#39;)</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$type</code></th><td data-label="desc"><p>min or max</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>min</code></td></tr></tbody></table><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).</p><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Error: #{$w} not found in $widths.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#globals-variable-breakpoints"><code>breakpoints</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#globals-variable-breakpoints"><code>breakpoints</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-container"><code>alec-container</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-container"><code>alec-container</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-container"><code>alec-container</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-grid"><code>alec-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-navbar"><code>alec-navbar</code></a></li></ul></section><section class="main__item container item" id="globals-mixin-box-sizing"><h3 class="item__heading"><a class="item__name" href="#mixin-box-sizing">box-sizing</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin box-sizing($el, $inherited) { 
+  #{$el} {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #{$inherited}, #{$inherited}:before, #{$inherited}:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+ }" data-collapsed="@mixin box-sizing($el, $inherited) { ... }"><code>@mixin box-sizing($el, $inherited) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>box-sizing</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$el</code></th><td data-label="desc"><p>element</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$inherited</code></th><td data-label="desc"><p>inherited</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-base"><code>alec-base</code></a></li></ul></section><section class="main__item container item" id="globals-mixin-clearfix"><h3 class="item__heading"><a class="item__name" href="#mixin-clearfix">clearfix</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin clearfix() { 
+  &amp;:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: &quot; &quot;;
+    clear: both;
+    height: 0;
+  }
+
+  * html &amp; { zoom: 1; } // IE6
+  *:first-child + html &amp; { zoom: 1; } // IE7
+ }" data-collapsed="@mixin clearfix() { ... }"><code>@mixin clearfix() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>clearfix mixin</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-clearfix"><code>clearfix</code></a></li></ul></section><section class="main__item container item" id="globals-mixin-animate"><h3 class="item__heading"><a class="item__name" href="#mixin-animate">animate</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin animate($anim) { 
+  -webkit-transition: $anim;
+  transition: $anim;
+ }" data-collapsed="@mixin animate($anim) { ... }"><code>@mixin animate($anim) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>animate mixin</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$anim</code></th><td data-label="desc"><p>transition value</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-animate"><code>animate</code></a></li></ul></section></section><section class="main__sub-section" id="globals-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="globals-placeholder-clearfix"><h3 class="item__heading"><a class="item__name" href="#placeholder-clearfix">clearfix</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%clearfix {  @include clearfix();  }" data-collapsed="%clearfix { ... }"><code>%clearfix { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>clearfix placeholder</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-clearfix"><code>clearfix</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-grid"><code>alec-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-navbar"><code>alec-navbar</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li></ul></section><section class="main__item container item" id="globals-placeholder-animate"><h3 class="item__heading"><a class="item__name" href="#placeholder-animate">animate</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%animate { 
+  @include animate(all 300ms ease-in-out);
+ }" data-collapsed="%animate { ... }"><code>%animate { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>animate placeholder</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-animate"><code>animate</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-button"><code>alec-button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-navbar"><code>alec-navbar</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-alec-utilities"><code>alec-utilities</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-alec-base"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-base">alec-base</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-base($font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, $color: #222, $font-size: 14px, $line-height: 1.5, $background-color: #FAFAFA, $a_color: #039be5, $divider_background-color: #ddd, $h1_font-size: 48px, $h2_font-size: 32px, $h3_font-size: 26px, $h4_font-size: 22px, $h5_font-size: 18px, $h6_font-size: 14px) { 
+
+
+
+  body {
+    font-family: $font-family;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0;
+    line-height: $line-height;
+    background: $background-color;
+    color: $color;
+  }
+
+  @include box-sizing(html, &#39;*&#39;);
+
+  html, body {
+    height: 100%;
+  }
+  
+  
+  h1 { font-size: $h1_font-size; margin: ($h1_font-size / 2) 0 ($h1_font-size / 2.5) 0; }
+  h2 { font-size: $h2_font-size; margin: ($h2_font-size / 2) 0 ($h2_font-size / 2.5) 0; }
+  h3 { font-size: $h3_font-size; margin: ($h3_font-size / 2) 0 ($h3_font-size / 2.5) 0; }
+  h4 { font-size: $h4_font-size; margin: ($h4_font-size / 2) 0 ($h4_font-size / 2.5) 0; }
+  h5 { font-size: $h5_font-size; margin: ($h5_font-size / 2) 0 ($h5_font-size / 2.5) 0; }
+  h6 { font-size: $h6_font-size; margin: ($h6_font-size / 2) 0 ($h6_font-size / 2.5) 0; }
+  
+  
+  em     { font-style: italic; }
+  small  { font-size: 75%; }
+  .light { font-weight: 300 !important; }
+  .thin  { font-weight: 200 !important; }
+
+
+  %tap-highlight-color {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a {
+    @extend %tap-highlight-color;
+    text-decoration: none;
+    color: $a_color;
+  }
+  
+  
+  button {
+    @extend %tap-highlight-color;
+    font-family: inherit;
+  }
+
+
+  .divider {
+    overflow: hidden;
+    height: 1px;
+    background-color: $divider_background-color;
+  }
+
+
+  .left  { float: left; }
+  .right { float: right; }
+
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+ }" data-collapsed="@mixin alec-base($font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, $color: #222, $font-size: 14px, $line-height: 1.5, $background-color: #FAFAFA, $a_color: #039be5, $divider_background-color: #ddd, $h1_font-size: 48px, $h2_font-size: 32px, $h3_font-size: 26px, $h4_font-size: 22px, $h5_font-size: 18px, $h6_font-size: 14px) { ... }"><code>@mixin alec-base($font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, $color: #222, $font-size: 14px, $line-height: 1.5, $background-color: #FAFAFA, $a_color: #039be5, $divider_background-color: #ddd, $h1_font-size: 48px, $h2_font-size: 32px, $h3_font-size: 26px, $h4_font-size: 22px, $h5_font-size: 18px, $h6_font-size: 14px) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>alec-base mixin</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-family</code></th><td data-label="desc"><p>font family of body tag</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>font color of body tag</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#222; color: #fff">#222</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-size</code></th><td data-label="desc"><p>font-size of body tag</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>14px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$line-height</code></th><td data-label="desc"><p>line height of body tag</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>1.5</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>background color of body tag</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#FAFAFA; color: #000">#FAFAFA</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$a_color</code></th><td data-label="desc"><p>text color of a tag</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#039be5; color: #fff">#039be5</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$divider_background-color</code></th><td data-label="desc"><p>background color of divider class</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#ddd; color: #000">#ddd</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$h1_font-size</code></th><td data-label="desc"><p>h1 font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>48px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$h2_font-size</code></th><td data-label="desc"><p>h1 font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>32px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$h3_font-size</code></th><td data-label="desc"><p>h1 font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>26px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$h4_font-size</code></th><td data-label="desc"><p>h1 font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>22px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$h5_font-size</code></th><td data-label="desc"><p>h1 font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>18px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$h6_font-size</code></th><td data-label="desc"><p>h1 font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>14px</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-box-sizing"><code>box-sizing</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-alec-button"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-button">alec-button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-button($height: 36px, $padding: 0 28px, $color: #fff, $background-color: #333, $background-color-hover: #444, $border-radius: 2px, $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), $animate: false, $color_disabled: #999, $background-color_disabled: #eee) { 
+
+  .btn {
+    display: inline-block;
+    height: $height;
+    padding: $padding;
+    color: $color;
+    background-color: $background-color;
+    text-align: center;
+    line-height: $height;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    border-radius: $border-radius;
+
+    @if $animate {
+      @extend %animate;
+    }
+    box-shadow: $box-shadow;
+    
+    &amp;:focus { outline: 0; }
+
+    &amp;:hover, &amp;:focus {
+      background-color: $background-color-hover;
+      
+      &amp;:not(.disabled, :disabled) {
+        box-shadow: none;
+      }
+    }
+
+    &amp;.disabled, &amp;:disabled {
+      background-color: $background-color_disabled;
+      color: $color_disabled;
+      opacity: .65;
+      cursor: default;
+    }
+  }
+
+ }" data-collapsed="@mixin alec-button($height: 36px, $padding: 0 28px, $color: #fff, $background-color: #333, $background-color-hover: #444, $border-radius: 2px, $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), $animate: false, $color_disabled: #999, $background-color_disabled: #eee) { ... }"><code>@mixin alec-button($height: 36px, $padding: 0 28px, $color: #fff, $background-color: #333, $background-color-hover: #444, $border-radius: 2px, $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), $animate: false, $color_disabled: #999, $background-color_disabled: #eee) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes alec button</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$height</code></th><td data-label="desc"><p>height of button</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>36px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$padding</code></th><td data-label="desc"><p>padding of button</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>0 28px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>text color of button</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#fff; color: #000">#fff</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>background color of button</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#333; color: #fff">#333</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color-hover</code></th><td data-label="desc"><p>background color on hover of button</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#444; color: #fff">#444</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$border-radius</code></th><td data-label="desc"><p>border radius of button</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>2px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$box-shadow</code></th><td data-label="desc"><p>box shadow of button</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>0 1px 2px rgba(0, 0, 0, 0.2)</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$animate</code></th><td data-label="desc"><p>animate background color of button</p></td><td data-label="type"><code>Bool</code></td><td data-label="default"><code>false</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color_disabled</code></th><td data-label="desc"><p>text color of button when disabled</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#999; color: #000">#999</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color_disabled</code></th><td data-label="desc"><p>background color of button when disabled</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#eee; color: #000">#eee</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-animate"><code>animate</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-alec-card"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-card">alec-card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-card($margin: 0 0 10px 0, $background-color: #fff, $content_padding: 15px, $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)) { 
+
+  .card {
+    background-color: $background-color;
+    margin: $margin;
+
+    box-shadow: $box-shadow;
+  }
+
+  .card-content {
+    padding: $content_padding;
+  }
+
+ }" data-collapsed="@mixin alec-card($margin: 0 0 10px 0, $background-color: #fff, $content_padding: 15px, $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)) { ... }"><code>@mixin alec-card($margin: 0 0 10px 0, $background-color: #fff, $content_padding: 15px, $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes card class</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$margin</code></th><td data-label="desc"><p>margin of card class</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>0 0 10px 0</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>background color of card class</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#fff; color: #000">#fff</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$content_padding</code></th><td data-label="desc"><p>padding of card-content class</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>15px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$box-shadow</code></th><td data-label="desc"><p>box-shadow of card class</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>0 1px 2px rgba(0, 0, 0, 0.2)</code></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-alec-container"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-container">alec-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-container($padding: 0 15px) { 
+
+  .container, .container-fluid {
+    padding: $padding;
+    margin: 0 auto;
+  }
+  
+  .container {
+    @include media(md) { max-width: 750px; }
+    @include media(lg) { max-width: 970px; }
+    @include media(xl) { max-width: 1170px; }
+  }
+ }" data-collapsed="@mixin alec-container($padding: 0 15px) { ... }"><code>@mixin alec-container($padding: 0 15px) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes container and container-fluid classes</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$padding</code></th><td data-label="desc"><p>padding of container and container-fluid classes</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>0 15px</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-alec-form"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-form">alec-form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-form($height: 38px, $background-color: #fff, $border: 1px solid #D1D1D1, $border-radius: 0px, $box-shadow: none, $border_focus: 1px solid #33C3F0, $textarea_min-height: 65px, $textarea_y-padding: 6px, $label-body_margin-left: 5px, $label-and-legend_margin-bottom: 5px) { 
+
+  %form-control {
+    height: $height;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: $background-color;
+    border: $border;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    &amp;:focus {
+      border: $border_focus;
+      outline: 0;
+    }
+  }
+
+
+  input[type=&quot;email&quot;], input[type=&quot;number&quot;], input[type=&quot;search&quot;], input[type=&quot;text&quot;], input[type=&quot;tel&quot;], input[type=&quot;url&quot;], input[type=&quot;password&quot;], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @extend %form-control;
+  }
+
+  textarea {
+    min-height: $textarea_min-height;
+    padding-top: $textarea_y-padding;
+    padding-bottom: $textarea_y-padding;
+    max-width: 100%;
+    @extend %form-control;
+  }
+
+  select { @extend %form-control; }
+
+  label, legend {
+    display: block;
+    margin-bottom: $label-and-legend_margin-bottom;
+  }
+ 
+  fieldset {
+    padding: 0;
+    border-width: 0;
+  }
+
+  input[type=&quot;checkbox&quot;], input[type=&quot;radio&quot;] {
+    display: inline;
+  }
+
+  label &gt; .label-body {
+    display: inline-block;
+    margin-left: $label-body_margin-left;
+    font-weight: normal;
+  }
+ }" data-collapsed="@mixin alec-form($height: 38px, $background-color: #fff, $border: 1px solid #D1D1D1, $border-radius: 0px, $box-shadow: none, $border_focus: 1px solid #33C3F0, $textarea_min-height: 65px, $textarea_y-padding: 6px, $label-body_margin-left: 5px, $label-and-legend_margin-bottom: 5px) { ... }"><code>@mixin alec-form($height: 38px, $background-color: #fff, $border: 1px solid #D1D1D1, $border-radius: 0px, $box-shadow: none, $border_focus: 1px solid #33C3F0, $textarea_min-height: 65px, $textarea_y-padding: 6px, $label-body_margin-left: 5px, $label-and-legend_margin-bottom: 5px) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes alec form</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$height</code></th><td data-label="desc"><p>height of form controls</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>38px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>background color of form controls</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#fff; color: #000">#fff</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$border</code></th><td data-label="desc"><p>border of form controls</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>1px solid #D1D1D1</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$border-radius</code></th><td data-label="desc"><p>border radius of form controls</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>0px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$box-shadow</code></th><td data-label="desc"><p>box shadow of form controls</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>none</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$border_focus</code></th><td data-label="desc"><p>border on focus of form controls</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>1px solid #33C3F0</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$textarea_min-height</code></th><td data-label="desc"><p>min height of textarea</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>65px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$textarea_y-padding</code></th><td data-label="desc"><p>vertical padding of textarea</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>6px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$label-body_margin-left</code></th><td data-label="desc"><p>margin left of label-body class</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>5px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$label-and-legend_margin-bottom</code></th><td data-label="desc"><p>margin bottom of label and legend tags</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>5px</code></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-alec-grid"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-grid">alec-grid</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-grid($make: ( width: (a, sm, md, lg, xl), push-pull: (a, sm, md, lg, xl), offset: (a, sm, md, lg, xl), ), $cols: 12, $gutters: 15px) { 
+
+
+  @mixin grid-push-pull($key, $index, $width) {
+    &amp;.push-#{$key}#{$index} { left: $width; }
+    &amp;.pull-#{$key}#{$index} { right: $width; }
+  }
+
+  @mixin grid-offset($key, $index, $width) {
+    &amp;.offset-#{$key}#{$index} { margin-left: $width; }
+  }
+  
+  @mixin grid-width($key, $index, $width) {
+    &amp;.#{$key}#{$index} { width: $width; }
+  }
+
+  @mixin make-grid($k) {
+    $main: any(map-get($make, width), $k);
+    $push-pull: any(map-get($make, push-pull), $k);
+    $offset: any(map-get($make, offset), $k);
+
+    @if $main {
+      @for $i from 1 through $cols {
+        @include grid-width($k, $i, ($i / $cols) * 100%);
+      }
+    }
+
+    @if $push-pull {
+      @for $i from 1 through ($cols - 1) {
+        @include grid-push-pull($k, $i, ($i / $cols) * 100%);
+      }
+    }
+
+    @if $offset {
+      @for $i from 1 through ($cols - 1) {
+        @include grid-offset($k, $i, ($i / $cols) * 100%);
+      }
+    }
+  }
+
+
+
+
+  .row {
+    @extend %clearfix;
+
+    margin-left: -($gutters / 2);
+    margin-right: -($gutters / 2);
+  }
+  
+  .col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: $gutters / 2;
+    padding-left: $gutters / 2;
+    float: left;
+
+    @include make-grid(a);
+
+    @each $breakpoint in (sm, md, lg, xl) {
+      @include media($breakpoint) {
+        @include make-grid($breakpoint);
+      }
+    }
+
+  }
+
+ }" data-collapsed="@mixin alec-grid($make: ( width: (a, sm, md, lg, xl), push-pull: (a, sm, md, lg, xl), offset: (a, sm, md, lg, xl), ), $cols: 12, $gutters: 15px) { ... }"><code>@mixin alec-grid($make: ( width: (a, sm, md, lg, xl), push-pull: (a, sm, md, lg, xl), offset: (a, sm, md, lg, xl), ), $cols: 12, $gutters: 15px) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes alec grid</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$make</code></th><td data-label="desc"><p>specify what you want to make</p></td><td data-label="type"><code>Map</code></td><td data-label="default"><code>( width: (a, sm, md, lg, xl), push-pull: (a, sm, md, lg, xl), offset: (a, sm, md, lg, xl), )</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$cols</code></th><td data-label="desc"><p>number of columns</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>12</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gutters</code></th><td data-label="desc"><p>space between two columns</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>15px</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-clearfix"><code>clearfix</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-alec-list"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-list">alec-list</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-list($nested_margin: 15px 0 15px 30px, $li_margin-bottom: 10px) { 
+
+  ul { list-style: circle inside; }
+  ol { list-style: decimal inside; }
+
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+
+    ol, ul {
+      margin: $nested_margin;
+    }
+  }
+
+  li { margin-bottom: $li_margin-bottom; }
+ }" data-collapsed="@mixin alec-list($nested_margin: 15px 0 15px 30px, $li_margin-bottom: 10px) { ... }"><code>@mixin alec-list($nested_margin: 15px 0 15px 30px, $li_margin-bottom: 10px) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes alec list</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$nested_margin</code></th><td data-label="desc"><p>margin of ul&gt;ol, ul&gt;ul, ol&gt;ul, ol,ol</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>15px 0 15px 30px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$li_margin-bottom</code></th><td data-label="desc"><p>margin bottom of li</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>10px</code></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-alec-navbar"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-navbar">alec-navbar</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-navbar($background-color: #333, $height: 55px, $z-index: 100, $box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), $expand: (md), $child_x-padding: 15px, $child_fg-color: 15px, $brand_font-size: 22px, $menu-height-on-mobile: 220px) { 
+
+
+
+  .navbar {
+    @extend %clearfix;
+  
+    background-color: $background-color;
+    line-height: $height;
+  
+    .container, .container-fluid { padding: 0; }
+  
+    &amp;.fixed-top {
+      box-shadow: $box-shadow;
+      width: 100%;
+      position: fixed;
+      z-index: $z-index;
+    }
+  }
+
+
+
+  // horizontal padding
+  %child-x-padding { padding: 0 $child_x-padding; }
+  // color
+  %child-fg-color { color: $child_fg-color; }
+
+
+  .navbar-brand {
+    font-size: $brand_font-size;
+    @extend %child-x-padding;
+    @extend %child-fg-color;
+  }
+  
+  
+  .navbar-button {
+    @extend %child-x-padding;
+    cursor: pointer;
+    height: $height;
+    background-color: transparent;
+    border-width: 0;
+  
+    &amp;:focus {
+      outline: 0;
+    }
+  
+    span {
+      display: block;
+      height: 2px;
+      width: 23px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      background: $child_fg-color;
+    }
+  }
+  
+  
+  // ul
+  .navbar-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    @extend %animate;
+
+    &amp;.open { height: $menu-height-on-mobile; overflow: auto; }
+
+    &gt; li {
+      display: block;
+      position: relative;
+      margin: 0;
+
+      &gt; a {
+        @extend %child-x-padding;
+        @extend %child-fg-color;
+        display: block;
+      }
+    }
+  }
+
+
+
+  // navbar expand
+  @mixin expand-navbar() {
+    .navbar-menu { height: auto; width: auto; }
+    .navbar-menu &gt; li { float: left; }
+    .navbar-button { display: none; }
+  }
+
+  @mixin make-navbar-expand($breakpoint) {
+    @if $breakpoint != a {
+      @include media($breakpoint) {
+        @include expand-navbar();
+      }
+    }
+    @else {
+      @include expand-navbar();
+    }
+  }
+
+  @if length($expand) &gt; 1 {
+    @each $b in $expand {
+      .navbar-expand-#{$b} { @include make-navbar-expand($b); }
+    }
+  }
+  @else {
+    @include make-navbar-expand($expand);
+  }
+  // /navbar expand
+
+ }" data-collapsed="@mixin alec-navbar($background-color: #333, $height: 55px, $z-index: 100, $box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), $expand: (md), $child_x-padding: 15px, $child_fg-color: 15px, $brand_font-size: 22px, $menu-height-on-mobile: 220px) { ... }"><code>@mixin alec-navbar($background-color: #333, $height: 55px, $z-index: 100, $box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), $expand: (md), $child_x-padding: 15px, $child_fg-color: 15px, $brand_font-size: 22px, $menu-height-on-mobile: 220px) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes alec navbar</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>background color of navbar</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#333; color: #fff">#333</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$height</code></th><td data-label="desc"><p>height of navbar</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>55px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$z-index</code></th><td data-label="desc"><p>z-index of navbar</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>100</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$box-shadow</code></th><td data-label="desc"><p>box shadow of navbar</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>0 2px 2px rgba(0, 0, 0, 0.3)</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$expand</code></th><td data-label="desc"><p>expand on (a, sm, md, lg, xl) and up</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>(md)</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$child_x-padding</code></th><td data-label="desc"><p>horizontal padding of child elements of navbar</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>15px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$child_fg-color</code></th><td data-label="desc"><p>child foreground color of navbar</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code>15px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$brand_font-size</code></th><td data-label="desc"><p>brand font size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>22px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$menu-height-on-mobile</code></th><td data-label="desc"><p>menu height on mobile</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>220px</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#globals-mixin-media"><code>media</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-clearfix"><code>clearfix</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-animate"><code>animate</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-normalize"><h3 class="item__heading"><a class="item__name" href="#mixin-normalize">normalize</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin normalize() { 
+
+  /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+  
+  /* Document
+     ========================================================================== */
+  
+  /**
+   * 1. Correct the line height in all browsers.
+   * 2. Prevent adjustments of font size after orientation changes in
+   *    IE on Windows Phone and in iOS.
+   */
+  
+  html {
+    line-height: 1.15; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers (opinionated).
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Add the correct display in IE 9-.
+   */
+  
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in IE.
+   */
+  
+  figcaption,
+  figure,
+  main { /* 1 */
+    display: block;
+  }
+  
+  /**
+   * Add the correct margin in IE 8.
+   */
+  
+  figure {
+    margin: 1em 40px;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * 1. Remove the gray background on active links in IE 10.
+   * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+   */
+  
+  a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+   */
+  
+  b,
+  strong {
+    font-weight: inherit;
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font style in Android 4.3-.
+   */
+  
+  dfn {
+    font-style: italic;
+  }
+  
+  /**
+   * Add the correct background and color in IE 9-.
+   */
+  
+  mark {
+    background-color: #ff0;
+    color: #000;
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 9-.
+   */
+  
+  audio,
+  video {
+    display: inline-block;
+  }
+  
+  /**
+   * Add the correct display in iOS 4-7.
+   */
+  
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  
+  /**
+   * Remove the border on images inside links in IE 10-.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /**
+   * Hide the overflow in IE.
+   */
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers (opinionated).
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: sans-serif; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+   *    controls in Android 4.
+   * 2. Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  html [type=&quot;button&quot;], /* 1 */
+  [type=&quot;reset&quot;],
+  [type=&quot;submit&quot;] {
+    -webkit-appearance: button; /* 2 */
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type=&quot;button&quot;]::-moz-focus-inner,
+  [type=&quot;reset&quot;]::-moz-focus-inner,
+  [type=&quot;submit&quot;]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type=&quot;button&quot;]:-moz-focusring,
+  [type=&quot;reset&quot;]:-moz-focusring,
+  [type=&quot;submit&quot;]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * 1. Add the correct display in IE 9-.
+   * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10-.
+   * 2. Remove the padding in IE 10-.
+   */
+  
+  [type=&quot;checkbox&quot;],
+  [type=&quot;radio&quot;] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type=&quot;number&quot;]::-webkit-inner-spin-button,
+  [type=&quot;number&quot;]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type=&quot;search&quot;] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+  
+  [type=&quot;search&quot;]::-webkit-search-cancel-button,
+  [type=&quot;search&quot;]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in Edge, IE, and Firefox.
+   */
+  
+  details, /* 1 */
+  menu {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Scripting
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 9-.
+   */
+  
+  canvas {
+    display: inline-block;
+  }
+  
+  /**
+   * Add the correct display in IE.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /* Hidden
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10-.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+ }" data-collapsed="@mixin normalize() { ... }"><code>@mixin normalize() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>normalize.css library</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://github.com/necolas/normalize.css">https://github.com/necolas/normalize.css</a></li></ul></section><section class="main__item container item" id="undefined-mixin-alec-spacing"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-spacing">alec-spacing</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-spacing($make: ( margin: ( 0: 0, 1: 15px * 0.5, 2: 15px ), padding: ( 0: 0, 1: 15px * 0.5, 2: 15px ) )) { 
+
+  @mixin gen($abbrev, $prop, $size, $length) {
+    .#{$abbrev}t#{$size} { #{$prop}-top: $length !important; }
+    .#{$abbrev}r#{$size} { #{$prop}-right: $length !important; }
+    .#{$abbrev}b#{$size} { #{$prop}-bottom: $length !important; }
+    .#{$abbrev}l#{$size} { #{$prop}-left: $length !important; }
+    .#{$abbrev}x#{$size} { @extend .#{$abbrev}l#{$size}; @extend .#{$abbrev}r#{$size}; }
+    .#{$abbrev}y#{$size} { @extend .#{$abbrev}t#{$size}; @extend .#{$abbrev}b#{$size}; }
+    .#{$abbrev}#{$size} { @extend .#{$abbrev}x#{$size}; @extend .#{$abbrev}y#{$size}; }
+  }
+
+  @each $prop, $map in $make {
+    @each $s, $value in $map {
+      @if $prop == margin {
+        @include gen(m, margin, $s, $value);
+      }
+      @else {
+        @include gen(p, padding, $s, $value);
+      }
+    }
+  }
+
+ }" data-collapsed="@mixin alec-spacing($make: ( margin: ( 0: 0, 1: 15px * 0.5, 2: 15px ), padding: ( 0: 0, 1: 15px * 0.5, 2: 15px ) )) { ... }"><code>@mixin alec-spacing($make: ( margin: ( 0: 0, 1: 15px * 0.5, 2: 15px ), padding: ( 0: 0, 1: 15px * 0.5, 2: 15px ) )) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes spacing classes</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$make</code></th><td data-label="desc"><p>specify what you want to create</p></td><td data-label="type"><code>Map</code></td><td data-label="default"><code>( margin: ( 0: 0, 1: 15px * 0.5, 2: 15px ), padding: ( 0: 0, 1: 15px * 0.5, 2: 15px ) )</code></td></tr></tbody></table><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://getbootstrap.com/docs/4.0/utilities/spacing/">http://getbootstrap.com/docs/4.0/utilities/spacing/</a></li></ul></section><section class="main__item container item" id="undefined-mixin-alec-table"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-table">alec-table</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-table($cells_padding: 12px 15px, $cells_border-bottom: 1px solid #E1E1E1, $cells_text-align: left) { 
+
+  th, td {
+    padding: $cells_padding;
+    text-align: $cells_text-align;
+    border-bottom: $cells_border-bottom;
+
+    &amp;:first-child { padding-left: 0; }
+    &amp;:last-child { padding-right: 0; }
+  }
+
+ }" data-collapsed="@mixin alec-table($cells_padding: 12px 15px, $cells_border-bottom: 1px solid #E1E1E1, $cells_text-align: left) { ... }"><code>@mixin alec-table($cells_padding: 12px 15px, $cells_border-bottom: 1px solid #E1E1E1, $cells_text-align: left) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>alec-table mixin</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$cells_padding</code></th><td data-label="desc"><p>cells padding of table</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>12px 15px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$cells_border-bottom</code></th><td data-label="desc"><p>cells border bottom of table</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>1px solid #E1E1E1</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$cells_text-align</code></th><td data-label="desc"><p>cells text align of table</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>left</code></td></tr></tbody></table></section><section class="main__item container item" id="undefined-mixin-alec-utilities"><h3 class="item__heading"><a class="item__name" href="#mixin-alec-utilities">alec-utilities</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin alec-utilities($make: (clearfix, animate, text-align, display, position)) { 
+
+  @if any($make, clearfix) { .clearfix { @extend %clearfix; } }
+  @if any($make, animate) { .animate { @extend %animate; } }
+
+  @if any($make, text-align) {
+    .text {
+      &amp;-left    { text-align: left !important; }
+      &amp;-right   { text-align: right !important; }
+      &amp;-center  { text-align: center !important; }
+      &amp;-justify { text-align: justify !important; }
+    }
+  }
+
+  @if any($make, display) {
+    .d {
+      &amp;-none { display: none !important; }
+      &amp;-inline { display: inline !important; }
+      &amp;-inline-block { display: inline-block !important; }
+      &amp;-block { display: block !important; }
+      &amp;-table { display: table !important; }
+      &amp;-table-cell { display: table-cell !important; }
+      &amp;-flex { display: flex !important; }
+      &amp;-inline-flex { display: inline-flex !important; }
+    }
+  }
+
+  @if any($make, position) {
+    .p {
+      &amp;-static { position: static !important; }
+      &amp;-relative { position: relative !important; }
+      &amp;-absolute { position: absolute !important; }
+      &amp;-fixed { position: fixed !important; }
+      &amp;-sticky { position: sticky !important; }
+    }
+  }
+
+ }" data-collapsed="@mixin alec-utilities($make: (clearfix, animate, text-align, display, position)) { ... }"><code>@mixin alec-utilities($make: (clearfix, animate, text-align, display, position)) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>makes utilities classes</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$make</code></th><td data-label="desc"><p>specify what you want to make</p></td><td data-label="type"><code>List</code></td><td data-label="default"><code>(clearfix, animate, text-align, display, position)</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#globals-function-any"><code>any</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-clearfix"><code>clearfix</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#globals-placeholder-animate"><code>animate</code></a></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <a class="project-info__name" href="https://github.com/jackprawns/alec#readme">Alec</a><!-- Version --> <span class="project-info__version">- v0.1.0</span><!-- License --> <span class="project-info__license">, under MIT</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

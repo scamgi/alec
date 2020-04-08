@@ -1,0 +1,91 @@
+/// alec-base mixin
+/// @param {list} $font-family [-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif] - font family of body tag
+/// @param {color} $color [#222] - font color of body tag
+/// @param {length} $font-size [14px] - font-size of body tag
+/// @param {number} $line-height [1.5] - line height of body tag
+/// @param {color} $background-color [#FAFAFA] - background color of body tag
+/// @param {color} $a_color [#039be5] - text color of a tag
+/// @param {color} $divider_background-color [#ddd] - background color of divider class
+/// @param {length} $h1_font-size [48px] - h1 font size
+/// @param {length} $h2_font-size [32px] - h1 font size
+/// @param {length} $h3_font-size [26px] - h1 font size
+/// @param {length} $h4_font-size [22px] - h1 font size
+/// @param {length} $h5_font-size [18px] - h1 font size
+/// @param {length} $h6_font-size [14px] - h1 font size
+@mixin alec-base(
+  $font-family: (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif),
+  $color: #222,
+  $font-size: 14px,
+  $line-height: 1.5,
+  $background-color: #FAFAFA,
+  $a_color: #039be5,
+  $h1_font-size: 48px,
+  $h2_font-size: 32px,
+  $h3_font-size: 26px,
+  $h4_font-size: 22px,
+  $h5_font-size: 18px,
+  $h6_font-size: 14px,
+  $divider_background-color: #ddd) {
+
+  /* base mixin
+  ------------------------------------------------------------------------ */
+
+  body {
+    font-family: $font-family;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0;
+    line-height: $line-height;
+    background: $background-color;
+    color: $color;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @include box-sizing(html, '*');
+
+  html, body {
+    height: 100%;
+  }
+  
+  
+  h1 { font-size: $h1_font-size; margin: ($h1_font-size / 2) 0 ($h1_font-size / 2.5) 0; }
+  h2 { font-size: $h2_font-size; margin: ($h2_font-size / 2) 0 ($h2_font-size / 2.5) 0; }
+  h3 { font-size: $h3_font-size; margin: ($h3_font-size / 2) 0 ($h3_font-size / 2.5) 0; }
+  h4 { font-size: $h4_font-size; margin: ($h4_font-size / 2) 0 ($h4_font-size / 2.5) 0; }
+  h5 { font-size: $h5_font-size; margin: ($h5_font-size / 2) 0 ($h5_font-size / 2.5) 0; }
+  h6 { font-size: $h6_font-size; margin: ($h6_font-size / 2) 0 ($h6_font-size / 2.5) 0; }
+  
+  
+  em     { font-style: italic; }
+  small  { font-size: 75%; }
+  .light { font-weight: 300 !important; }
+  .thin  { font-weight: 200 !important; }
+
+
+  a {
+    text-decoration: none;
+    color: $a_color;
+  }
+  
+  
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+  }
+
+
+  .divider {
+    overflow: hidden;
+    height: 1px;
+    background-color: $divider_background-color;
+  }
+
+
+  .float-left  { float: left; }
+  .float-right { float: right; }
+
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid - alec</title>
+
+  <link rel="stylesheet" href="../build/alec.css">
+</head>
+
+<body>
+  <style>
+    .pink, .orange, .light-blue, .light-green {
+      padding: 15px 10px;
+    }
+
+    .pink {background: pink;}
+    .orange {background: orange;}
+    .light-green {background: lightgreen;}
+    .light-blue {background: lightblue;}
+  </style>
+
+  <div class="container" style="padding-top:40px;">
+    <div class="row">
+      <div class="col md4"><div class="pink">Hello world. 4</div></div>
+      <div class="col md8"><div class="orange">Hello. 8</div></div>
+      <div class="col md4"><div class="orange">Hello world. 4</div></div>
+      <div class="col offset-md4 md4"><div class="pink">Only for 768px and up, this column has a left margin.</div></div>
+      <div class="col a4 push-md8"><div class="light-green">This is the first for mobiles.</div></div>
+      <div class="col a8 pull-md4"><div class="light-blue">Second.</div></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/// makes utilities classes
+/// @param {list} $make [(general, text-align, display, position, sizing, flex)] - specify what you want to make
+@mixin alec-utilities(
+  $make: (general, text-align, display, position, sizing, flex)) {
+
+  /* utilities mixin
+  ------------------------------------------------------------------------ */
+
+  @if any($make, general) {
+    .clearfix { @extend %clearfix; }
+  }
+
+  @if any($make, text-align) {
+    .text {
+      &-left    { text-align: left !important; }
+      &-right   { text-align: right !important; }
+      &-center  { text-align: center !important; }
+      &-justify { text-align: justify !important; }
+    }
+  }
+
+  @if any($make, display) {
+    .d {
+      &-none { display: none !important; }
+      &-inline { display: inline !important; }
+      &-inline-block { display: inline-block !important; }
+      &-block { display: block !important; }
+      &-table { display: table !important; }
+      &-table-cell { display: table-cell !important; }
+      &-flex { display: flex !important; }
+      &-inline-flex { display: inline-flex !important; }
+    }
+  }
+
+  @if any($make, position) {
+    .p {
+      &-static { position: static !important; }
+      &-relative { position: relative !important; }
+      &-absolute { position: absolute !important; }
+      &-fixed { position: fixed !important; }
+      &-sticky { position: sticky !important; }
+    }
+  }
+
+  @if any($make, sizing) {
+    @each $size in (25, 50, 75, 100) {
+      .h#{$size} { height: $size * 1px !important; }
+      .w#{$size} { width: $size * 1px !important; }
+    }
+    .mw100 { max-width: 100% !important; }
+    .mh100 { max-height: 100% !important; }
+  }
+
+  @if any($make, flex) {
+    @each $v in (row, row-reverse, column, column-reverse) {
+      .flex-#{$v} { flex-direction: $v !important; }
+    }
+    @each $v in (flex-start, flex-end, space-around, space-between, center) {
+      .justify-content-#{$v} { justify-content: $v !important; }
+    }
+    @each $v in (wrap, nowrap, wrap-reverse) {
+      .flex-#{$v} { flex-wrap: $v !important; }
+    }
+    @each $v in (flex-start, flex-end, center, baseline, stretch) {
+      .align-items-#{$v} { align-items: $v !important; }
+      .align-self-#{$v} { align-self: $v !important; }
+    }
+  }
+
+}

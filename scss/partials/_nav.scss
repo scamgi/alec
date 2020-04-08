@@ -1,0 +1,24 @@
+@mixin alec-nav(
+  $padding-x: 15px,
+  $height: 50px
+) {
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    
+    > li {
+      margin-bottom: 0;
+      
+      > a {
+        display: block;
+        height: $height;
+        line-height: $height;
+        padding-left: $padding-x;
+        padding-right: $padding-x;
+      }
+    }
+  }
+}

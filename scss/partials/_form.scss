@@ -1,0 +1,78 @@
+/// makes alec form
+/// @param {length} $height [38px] - height of form controls
+/// @param {color} $background-color [#fff] - background color of form controls
+/// @param {list} $border [1px solid #D1D1D1] - border of form controls
+/// @param {length} $border-radius [0px] - border radius of form controls
+/// @param {list} $box-shadow [none] - box shadow of form controls
+/// @param {list} $border_focus [1px solid #33C3F0] - border on focus of form controls
+/// @param {length} $textarea_min-height [65px] - min height of textarea
+/// @param {length} $textarea_y-padding [6px] - vertical padding of textarea
+/// @param {length} $label-body_margin-left [5px] - margin left of label-body class
+/// @param {length} $label-and-legend_margin-bottom [5px] - margin bottom of label and legend tags
+@mixin alec-form(
+  $height: 38px,
+  $background-color: #fff,
+  $border: 1px solid #D1D1D1,
+  $border-radius: 0px,
+  $box-shadow: none,
+  $border_focus: 1px solid #33C3F0,
+  $textarea_min-height: 65px,
+  $textarea_y-padding: 6px,
+  $label-body_margin-left: 5px,
+  $label-and-legend_margin-bottom: 5px) {
+
+  /* form mixin
+  ------------------------------------------------------------------------ */
+
+  %form-control {
+    height: $height;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: $background-color;
+    border: $border;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    &:focus {
+      border: $border_focus;
+      outline: 0;
+    }
+  }
+
+
+  input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @extend %form-control;
+  }
+
+  textarea {
+    min-height: $textarea_min-height;
+    padding-top: $textarea_y-padding;
+    padding-bottom: $textarea_y-padding;
+    max-width: 100%;
+    @extend %form-control;
+  }
+
+  select { @extend %form-control; }
+
+  label, legend {
+    display: block;
+    margin-bottom: $label-and-legend_margin-bottom;
+  }
+ 
+  fieldset {
+    padding: 0;
+    border-width: 0;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    display: inline;
+  }
+
+  label > .label-body {
+    display: inline-block;
+    margin-left: $label-body_margin-left;
+    font-weight: normal;
+  }
+}

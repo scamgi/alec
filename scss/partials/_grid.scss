@@ -1,0 +1,81 @@
+/// makes alec grid
+/// @param {map} $make [( width: (a, sm, md, lg, xl), order: (a, sm, md, lg, xl), offset: (a, sm, md, lg, xl) )] - specify what you want to make
+/// @param {number} $cols [12] - number of columns
+/// @param {length} $gutters [15px] - space between two columns
+@mixin alec-grid(
+  $make: (
+    width: (a, sm, md, lg, xl),
+    order: (a, sm, md, lg, xl),
+    offset: (a, sm, md, lg, xl)
+  ),
+  $cols: 12,
+  $gutters: 15px) {
+
+  /* grid mixin
+  ------------------------------------------------------------------------ */
+
+  @mixin grid-order($key, $index) {
+    &.order-#{$key}#{$index} { order: $index; }
+  }
+
+  @mixin grid-offset($key, $index, $width) {
+    &.offset-#{$key}#{$index} { margin-left: $width; }
+  }
+  
+  @mixin grid-width($key, $index, $width) {
+    &.#{$key}#{$index} {
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  @mixin make-grid($k) {
+    $main: any(map-get($make, width), $k);
+    $order: any(map-get($make, order), $k);
+    $offset: any(map-get($make, offset), $k);
+
+    @if $main {
+      @for $i from 1 through $cols {
+        @include grid-width($k, $i, ($i / $cols) * 100%);
+      }
+    }
+
+    @if $order {
+      @for $i from 1 through $cols {
+        @include grid-order($k, $i);
+      }
+    }
+
+    @if $offset {
+      @for $i from 1 through ($cols - 1) {
+        @include grid-offset($k, $i, ($i / $cols) * 100%);
+      }
+    }
+  }
+
+
+
+
+  .row {
+    margin-left: -($gutters / 2);
+    margin-right: -($gutters / 2);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: $gutters / 2;
+    padding-left: $gutters / 2;
+
+    @each $breakpoint in (a, sm, md, lg, xl) {
+      @include media($breakpoint) {
+        @include make-grid($breakpoint);
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,36 @@
+/// alec-table mixin
+/// @param {length} $cells_padding [12px 15px] - cells padding of table
+/// @param {length} $cells_border-bottom [1px solid #E1E1E1] - cells border bottom of table
+/// @param {length} $cells_text-align [left] - cells text align of table
+/// @param {list} $make [(striped)] - makes table ...
+/// @param {color} $striped_background-color [#E1E1E1] - background color when table striped ...
+@mixin alec-table(
+  $cells_padding: 12px 15px,
+  $cells_border-bottom: 1px solid #E1E1E1,
+  $cells_text-align: left,
+  $make: (striped),
+  $striped_background-color: #E1E1E1) {
+
+  /* table mixin
+  ------------------------------------------------------------------------ */
+
+  table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: $cells_padding;
+    vertical-align: top;
+    text-align: $cells_text-align;
+    border-bottom: $cells_border-bottom;
+  }
+
+  @if any($make, striped) {
+    table > tbody > tr:nth-child(odd) {
+      background-color: $striped_background-color;
+    }
+  }
+
+}

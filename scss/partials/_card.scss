@@ -1,0 +1,25 @@
+/// makes card class
+/// @param {list} $margin [0 0 10px 0] - margin of card class
+/// @param {color} $background-color [#fff] - background color of card class
+/// @param {length} $content_padding [15px] - padding of card-content class
+/// @param {list} $box-shadow [(0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12))] - box-shadow of card class
+@mixin alec-card(
+  $margin: 0 0 10px 0,
+  $background-color: #fff,
+  $content_padding: 15px,
+  $box-shadow: (0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12))) {
+  /* card mixin
+  ------------------------------------------------------------------------ */
+
+  .card {
+    background-color: $background-color;
+    margin: $margin;
+
+    box-shadow: $box-shadow;
+  }
+
+  .card-content {
+    padding: $content_padding;
+  }
+
+}

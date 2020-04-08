@@ -1,0 +1,24 @@
+/// makes alec list
+/// @param {length} $nested_margin [15px 0 15px 30px] - margin of ul>ol, ul>ul, ol>ul, ol,ol
+/// @param {length} $li_margin-bottom [10px] - margin bottom of li
+@mixin alec-list(
+  $nested_margin: 15px 0 15px 30px,
+  $li_margin-bottom: 10px) {
+
+  /* list mixin
+  ------------------------------------------------------------------------ */
+
+  ul { list-style: circle inside; }
+  ol { list-style: decimal inside; }
+
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+
+    ol, ul {
+      margin: $nested_margin;
+    }
+  }
+
+  li { margin-bottom: $li_margin-bottom; }
+}

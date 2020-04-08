@@ -1,0 +1,19 @@
+/// makes container and container-fluid classes
+/// @param {list} $padding [0 15px] - padding of container and container-fluid classes
+@mixin alec-container(
+  $padding: 0 15px) {
+
+  /* container mixin
+  ------------------------------------------------------------------------ */
+
+  .container, .container-fluid {
+    padding: $padding;
+    margin: 0 auto;
+  }
+  
+  .container {
+    @include media(md) { max-width: 750px; }
+    @include media(lg) { max-width: 970px; }
+    @include media(xl) { max-width: 1170px; }
+  }
+}

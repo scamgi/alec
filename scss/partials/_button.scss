@@ -1,0 +1,61 @@
+/// makes alec button
+/// @param {length} $height [36px] - height of button
+/// @param {list} $padding [0 28px] - padding of button
+/// @param {color} $color [#fff] - text color of button
+/// @param {color} $background-color [#333] - background color of button
+/// @param {color} $background-color-hover [#444] - background color on hover of button
+/// @param {length} $border-radius [2px] - border radius of button
+/// @param {list} $box-shadow [0 1px 2px rgba(0, 0, 0, 0.2)] - box shadow of button
+/// @param {color} $color_disabled [#999] - text color of button when disabled
+/// @param {color} $background-color_disabled [#eee] - background color of button when disabled
+@mixin alec-button(
+  $height: 36px,
+  $padding: 0 28px,
+  $color: #fff,
+  $background-color: #333,
+  $background-color-hover: #444,
+  $border-radius: 2px,
+  $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2),
+
+  $color_disabled: #999,
+  $background-color_disabled: #eee) {
+
+  /* button mixin
+  ------------------------------------------------------------------------ */
+
+  .btn {
+    display: inline-block;
+    height: $height;
+    padding: $padding;
+    color: $color;
+    background-color: $background-color;
+    text-align: center;
+    line-height: $height;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    border-radius: $border-radius;
+
+    box-shadow: $box-shadow;
+    
+    &:focus { outline: 0; }
+
+    &:hover, &:focus {
+      background-color: $background-color-hover;
+      
+      &:not(.disabled, :disabled) {
+        box-shadow: none;
+      }
+    }
+
+    &.disabled, &:disabled {
+      background-color: $background-color_disabled;
+      color: $color_disabled;
+      opacity: .65;
+      cursor: default;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+/// makes spacing classes
+/// @param {map} $margin [( 0: 0, 1: 15px * 0.5, 2: 15px )] - specify what you want to create
+/// @param {map} $padding [( 0: 0, 1: 15px * 0.5, 2: 15px )] - specify what you want to create
+/// @link http://getbootstrap.com/docs/4.0/utilities/spacing/
+@mixin alec-spacing(
+  $margin: (
+    0: 0,
+    1: 15px * 0.5,
+    2: 15px
+  ),
+  $padding: (
+    0: 0,
+    1: 15px * 0.5,
+    2: 15px
+  )) {
+
+  /* spacing mixin
+  ------------------------------------------------------------------------ */
+
+  @mixin gen($abbrev, $prop, $size, $length) {
+    .#{$abbrev}t#{$size} { #{$prop}-top: $length !important; }
+    .#{$abbrev}r#{$size} { #{$prop}-right: $length !important; }
+    .#{$abbrev}b#{$size} { #{$prop}-bottom: $length !important; }
+    .#{$abbrev}l#{$size} { #{$prop}-left: $length !important; }
+    .#{$abbrev}x#{$size} { @extend .#{$abbrev}l#{$size}; @extend .#{$abbrev}r#{$size}; }
+    .#{$abbrev}y#{$size} { @extend .#{$abbrev}t#{$size}; @extend .#{$abbrev}b#{$size}; }
+    .#{$abbrev}#{$size} { @extend .#{$abbrev}x#{$size}; @extend .#{$abbrev}y#{$size}; }
+  }
+
+  $make: (
+    margin: $margin,
+    padding: $padding
+  );
+
+  @each $prop, $map in $make {
+    @each $s, $value in $map {
+      @if $prop == margin {
+        @include gen(m, margin, $s, $value);
+      }
+      @else {
+        @include gen(p, padding, $s, $value);
+      }
+    }
+  }
+
+}
